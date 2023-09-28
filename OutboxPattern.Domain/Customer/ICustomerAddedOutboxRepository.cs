@@ -10,5 +10,6 @@ namespace OutboxPattern.Domain.Customer
     public interface ICustomerAddedOutboxRepository : IBusinessRepository
     {
         Task AddAsnyc(CustomerAddedOutbox entity);
+        Task<List<CustomerAddedOutbox>> GetAsnyc();
     }
 }

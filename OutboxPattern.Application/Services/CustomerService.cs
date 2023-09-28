@@ -13,11 +13,16 @@ namespace OutboxPattern.Application.Services
 
         public async Task AddAsnyc(CustomerDto entity)
         {
-            // make transaction 
+            // TODO-Arda: make transaction 
 
             await _repository.AddAsnyc(MapToEntity(entity));
+            await _customerAddedOutboxRepository.AddAsnyc(MapToCustomerAddedOutboxEntity(entity));
 
-            await _customerAddedOutboxRepository.AddAsnyc(new CustomerAddedOutbox()
+        }
+
+        private static CustomerAddedOutbox MapToCustomerAddedOutboxEntity(CustomerDto entity)
+        {
+            return new CustomerAddedOutbox()
             {
                 ExchangeName = ExchangeNameConstants.EXCHANGE_CUSTOMER_ADDED,
                 Payload = JsonSerializer.Serialize(new CustomerAddedRequest()
@@ -26,7 +31,7 @@ namespace OutboxPattern.Application.Services
                     UserName = entity.UserName
                 }),
                 EventType = CustomerAddedRequest.GetTypeName()
-            });
+            };
         }
 
         private static Customer MapToEntity(CustomerDto entity)

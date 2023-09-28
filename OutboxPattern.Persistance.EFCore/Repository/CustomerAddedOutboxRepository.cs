@@ -1,4 +1,5 @@
-﻿using OutboxPattern.Domain.Customer;
+﻿using Microsoft.EntityFrameworkCore;
+using OutboxPattern.Domain.Customer;
 using OutboxPattern.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -12,8 +13,11 @@ namespace OutboxPattern.Persistance.EFCore.Repository
     {
         public async Task AddAsnyc(CustomerAddedOutbox entity)
         {
-            await _dbContext.AddAsync(entity);
+            await _dbContext.CustomerAddedOutbox.AddAsync(entity);
             await _dbContext.SaveChangesAsync();
         }
+
+        public async Task<List<CustomerAddedOutbox>> GetAsnyc() 
+            => await _dbContext.CustomerAddedOutbox.AsQueryable().OrderByDescending(x => x.TimeStamp).Take(20).ToListAsync();
     }
 }
