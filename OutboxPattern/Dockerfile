@@ -7,10 +7,13 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["OutboxPattern/OutboxPattern.API.csproj", "OutboxPattern/"]
-COPY ["OutboxPattern.Infrastructure/OutboxPattern.Infrastructure.csproj", "OutboxPattern.Infrastructure/"]
+COPY ["OutboxPattern.Application.Contract/OutboxPattern.Application.Contract.csproj", "OutboxPattern.Application.Contract/"]
+COPY ["OutboxPattern.Application/OutboxPattern.Application.csproj", "OutboxPattern.Application/"]
 COPY ["OutboxPattern.Application.Core/OutboxPattern.Application.Core.csproj", "OutboxPattern.Application.Core/"]
-COPY ["OutboxPattern.Domain.Core/OutboxPattern.Domain.Core.csproj", "OutboxPattern.Domain.Core/"]
 COPY ["OutboxPattern.Domain/OutboxPattern.Domain.csproj", "OutboxPattern.Domain/"]
+COPY ["OutboxPattern.Domain.Core/OutboxPattern.Domain.Core.csproj", "OutboxPattern.Domain.Core/"]
+COPY ["OutboxPattern.Infrastructure/OutboxPattern.Infrastructure.csproj", "OutboxPattern.Infrastructure/"]
+COPY ["OutboxPattern.Persistance.EFCore/OutboxPattern.Persistance.EFCore.csproj", "OutboxPattern.Persistance.EFCore/"]
 RUN dotnet restore "OutboxPattern/OutboxPattern.API.csproj"
 COPY . .
 WORKDIR "/src/OutboxPattern"

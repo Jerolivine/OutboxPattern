@@ -8,10 +8,13 @@ namespace OutboxPattern.Persistance.EFCore.Configuration
     {
         public void Configure(EntityTypeBuilder<Customer> builder)
         {
-            builder.HasKey(t => t.Id);
-            builder.Property(t => t.Id).ValueGeneratedOnAdd();
 
-            builder.Property(t => t.UserName).IsRequired();  
+            builder.ToTable("CUSTOMER");
+
+            builder.HasKey(t => t.Id);
+            builder.Property(t => t.Id).HasColumnName("ID").ValueGeneratedOnAdd();
+
+            builder.Property(t => t.UserName).HasColumnName("USER_NAME").IsRequired();  
         }
     }
 }
