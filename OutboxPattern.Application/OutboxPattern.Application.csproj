@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OutboxPattern.Application.Contract\OutboxPattern.Application.Contract.csproj" />
+    <ProjectReference Include="..\OutboxPattern.Application.Core\OutboxPattern.Application.Core.csproj" />
+    <ProjectReference Include="..\OutboxPattern.Domain\OutboxPattern.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

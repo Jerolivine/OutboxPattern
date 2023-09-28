@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  outboxpattern.api:
+    image: ${DOCKER_REGISTRY-}outboxpatternapi
+    build:
+      context: .
+      dockerfile: OutboxPattern/Dockerfile
+    depends_on:
+      - outboxpattern-db
+      - rabbitmq
+
+  outboxpattern-db:
+     container_name: outboxpattern-db
+     image: "mcr.microsoft.com/mssql/server:2022-latest"
+     ports:
+       - "1433:1433"
+     environment:
+       SA_PASSWORD: "12345678A@"
+       ACCEPT_EULA: "Y"
+     volumes:
+       - ./volume/mssql/data:/var/opt/mssql/data
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+        - 5672:5672
+        - 15672:15672
+    volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OutboxPattern.Application.Contract\OutboxPattern.Application.Contract.csproj" />
+    <ProjectReference Include="..\OutboxPattern.Application\OutboxPattern.Application.csproj" />
+    <ProjectReference Include="..\OutboxPattern.Infrastructure\OutboxPattern.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
