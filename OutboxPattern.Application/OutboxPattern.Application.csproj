@@ -4,9 +4,11 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\OutboxPattern.Shared\OutboxPattern.Shared.csproj" />
     <ProjectReference Include="..\OutboxPattern.Application.Contract\OutboxPattern.Application.Contract.csproj" />
     <ProjectReference Include="..\OutboxPattern.Application.Core\OutboxPattern.Application.Core.csproj" />
     <ProjectReference Include="..\OutboxPattern.Domain\OutboxPattern.Domain.csproj" />

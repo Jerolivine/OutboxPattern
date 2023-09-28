@@ -3,35 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.API", "OutboxPattern\OutboxPattern.API.csproj", "{6D4876C0-5F37-4543-BC93-FF578FD18651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.API", "OutboxPattern\OutboxPattern.API.csproj", "{6D4876C0-5F37-4543-BC93-FF578FD18651}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.Domain", "OutboxPattern.Domain\OutboxPattern.Domain.csproj", "{167CE50D-FF7F-4D9F-BA40-6602A946E8A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Domain", "OutboxPattern.Domain\OutboxPattern.Domain.csproj", "{167CE50D-FF7F-4D9F-BA40-6602A946E8A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.Infrastructure", "OutboxPattern.Infrastructure\OutboxPattern.Infrastructure.csproj", "{4C441987-4756-4F23-B6D5-C1A451D68AA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Infrastructure", "OutboxPattern.Infrastructure\OutboxPattern.Infrastructure.csproj", "{4C441987-4756-4F23-B6D5-C1A451D68AA4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{4D796D28-61C0-4B0C-8E04-CC8C1823235E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistance", "Persistance", "{C2724F56-B308-403B-890C-03AA1690A378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.Persistance.EFCore", "OutboxPattern.Persistance.EFCore\OutboxPattern.Persistance.EFCore.csproj", "{5BAF5CA9-5929-4022-BE5B-FE06F5579311}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Persistance.EFCore", "OutboxPattern.Persistance.EFCore\OutboxPattern.Persistance.EFCore.csproj", "{5BAF5CA9-5929-4022-BE5B-FE06F5579311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.Application", "OutboxPattern.Application\OutboxPattern.Application.csproj", "{98523F74-50B7-4514-B806-D93F635602BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Application", "OutboxPattern.Application\OutboxPattern.Application.csproj", "{98523F74-50B7-4514-B806-D93F635602BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{14B69B9F-F469-42E3-A6F1-A46CE8A84380}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.Application.Core", "OutboxPattern.Application.Core\OutboxPattern.Application.Core.csproj", "{9576DD02-E8BE-40AA-8DC6-1CB8818AFC8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Application.Core", "OutboxPattern.Application.Core\OutboxPattern.Application.Core.csproj", "{9576DD02-E8BE-40AA-8DC6-1CB8818AFC8B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C92EDCE8-50EB-4F45-934A-F23FDCED3361}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.Domain.Core", "OutboxPattern.Domain.Core\OutboxPattern.Domain.Core.csproj", "{08648CD5-11D3-416C-B093-251D8A588D68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Domain.Core", "OutboxPattern.Domain.Core\OutboxPattern.Domain.Core.csproj", "{08648CD5-11D3-416C-B093-251D8A588D68}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{9D43AF6E-92B9-4D05-BB6A-3325C9283037}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contract", "Contract", "{B5DA9D7D-B7C2-4484-B068-78F5EC063976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.Application.Contract", "OutboxPattern.Application.Contract\OutboxPattern.Application.Contract.csproj", "{2638C2DB-44B9-4A39-8808-2C167C60B122}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Application.Contract", "OutboxPattern.Application.Contract\OutboxPattern.Application.Contract.csproj", "{2638C2DB-44B9-4A39-8808-2C167C60B122}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FF7ADBD1-EAC0-46EB-BA3D-A31007365B41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{4A52FDED-0479-4CB2-9A43-437373587193}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outbox", "Outbox", "{70602D36-BA50-48FD-A5FD-629725422B63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Jobs.Outbox", "..\OutboxPattern.Jobs.Outbox\OutboxPattern.Jobs.Outbox.csproj", "{5AA903C1-5965-418A-894C-F6484AE1BBF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Consumer", "Consumer", "{4CB5E12C-5F6C-4355-BB76-B41E94C771C5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Consumer", "..\OutboxPattern.Consumer\OutboxPattern.Consumer.csproj", "{77E12E03-5E2E-4BCB-A1DD-8BD32BD3D740}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern.Constants", "..\OutboxPattern.Constants\OutboxPattern.Constants.csproj", "{8A3D0905-0CD5-4491-96D5-62677BBEAF14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutboxPattern.Shared", "..\OutboxPattern.Shared\OutboxPattern.Shared.csproj", "{43E40EF5-6A97-491A-B2A2-A2C08E5350B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +89,22 @@ Global
 		{FF7ADBD1-EAC0-46EB-BA3D-A31007365B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF7ADBD1-EAC0-46EB-BA3D-A31007365B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF7ADBD1-EAC0-46EB-BA3D-A31007365B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA903C1-5965-418A-894C-F6484AE1BBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA903C1-5965-418A-894C-F6484AE1BBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA903C1-5965-418A-894C-F6484AE1BBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA903C1-5965-418A-894C-F6484AE1BBF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E12E03-5E2E-4BCB-A1DD-8BD32BD3D740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E12E03-5E2E-4BCB-A1DD-8BD32BD3D740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E12E03-5E2E-4BCB-A1DD-8BD32BD3D740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E12E03-5E2E-4BCB-A1DD-8BD32BD3D740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3D0905-0CD5-4491-96D5-62677BBEAF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3D0905-0CD5-4491-96D5-62677BBEAF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3D0905-0CD5-4491-96D5-62677BBEAF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3D0905-0CD5-4491-96D5-62677BBEAF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E40EF5-6A97-491A-B2A2-A2C08E5350B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E40EF5-6A97-491A-B2A2-A2C08E5350B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E40EF5-6A97-491A-B2A2-A2C08E5350B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E40EF5-6A97-491A-B2A2-A2C08E5350B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +120,11 @@ Global
 		{08648CD5-11D3-416C-B093-251D8A588D68} = {C92EDCE8-50EB-4F45-934A-F23FDCED3361}
 		{B5DA9D7D-B7C2-4484-B068-78F5EC063976} = {14B69B9F-F469-42E3-A6F1-A46CE8A84380}
 		{2638C2DB-44B9-4A39-8808-2C167C60B122} = {B5DA9D7D-B7C2-4484-B068-78F5EC063976}
+		{70602D36-BA50-48FD-A5FD-629725422B63} = {4A52FDED-0479-4CB2-9A43-437373587193}
+		{5AA903C1-5965-418A-894C-F6484AE1BBF9} = {70602D36-BA50-48FD-A5FD-629725422B63}
+		{77E12E03-5E2E-4BCB-A1DD-8BD32BD3D740} = {4CB5E12C-5F6C-4355-BB76-B41E94C771C5}
+		{8A3D0905-0CD5-4491-96D5-62677BBEAF14} = {4D796D28-61C0-4B0C-8E04-CC8C1823235E}
+		{43E40EF5-6A97-491A-B2A2-A2C08E5350B2} = {B5DA9D7D-B7C2-4484-B068-78F5EC063976}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5516E246-0379-4641-A330-E0482C37552B}

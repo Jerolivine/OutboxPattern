@@ -1,15 +1,10 @@
 ﻿using OutboxPattern.Domain.Customer;
+using OutboxPattern.Domain.Interfaces;
 
 namespace OutboxPattern.Persistance.EFCore.Repository
 {
-    public class CustomerRepository : ICustomerRepository
+    public class CustomerRepository(EFCoreDbContext _dbContext) : ICustomerRepository, IBusinessRepository
     {
-        public EFCoreDbContext _dbContext { get; set; }
-        public CustomerRepository(EFCoreDbContext dbContext) 
-        {
-            _dbContext = dbContext;
-        }
-
         public async Task AddAsnyc(Customer entity)
         {
             await _dbContext.AddAsync(entity);
