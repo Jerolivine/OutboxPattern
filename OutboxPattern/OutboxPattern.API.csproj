@@ -11,9 +11,14 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
+    <PackageReference Include="Quartz" Version="3.7.0" />
+    <PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.7.0" />
+    <PackageReference Include="Quartz.Extensions.Hosting" Version="3.7.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\OutboxPattern.Consumer\OutboxPattern.Consumer.csproj" />
+    <ProjectReference Include="..\..\OutboxPattern.Jobs.Outbox\OutboxPattern.Jobs.Outbox.csproj" />
     <ProjectReference Include="..\OutboxPattern.Application.Contract\OutboxPattern.Application.Contract.csproj" />
     <ProjectReference Include="..\OutboxPattern.Application\OutboxPattern.Application.csproj" />
     <ProjectReference Include="..\OutboxPattern.Infrastructure\OutboxPattern.Infrastructure.csproj" />
